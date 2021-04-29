@@ -2,7 +2,7 @@
 import sys
 from jsonrpclib import Server
 def main():
-    conn = Server('http://172.31.86.210:12000')
+    conn = Server('http://localhost:12000')
     parameters = sys.argv[1:]
     function = parameters[0]
     number1 = parameters[1]
