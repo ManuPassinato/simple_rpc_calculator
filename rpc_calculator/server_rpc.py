@@ -21,7 +21,7 @@ def execute(function, number1, number2):
 	return globals()[function.lower()](number1, number2)
 
 def main():
-	server = SimpleJSONRPCServer(('172.31.86.210', 12000))
+	server = SimpleJSONRPCServer(('localhost', 12000))
 	server.register_function(execute)
 	print("Start server")
 	server.serve_forever()
